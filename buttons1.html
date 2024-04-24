@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website with Buttons</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header, footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .btn1 {
+            display: inline-block;
+            width: auto;
+            transition: width 0.3s;
+        }
+
+        .btn1:hover {
+            width: 220px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .search-btn {
+            background-color: #007bff;
+        }
+
+        .profile-btn {
+            background-color: #28a745;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Website Title</h1>
+    </header>
+    <main>
+        <div class="btn1">
+            <a href="search.html"><button class="search-btn">Search</button></a>
+            <a href="profiles.html"><button class="profile-btn">Profiles</button></a>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Website Name</p>
+    </footer>
+</body>
+</html>
