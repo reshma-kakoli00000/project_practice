@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Table Example 1</title>
+
+    <style>
+        table{
+            border: 2px solid black;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th,td{
+            border: 1px solid black;
+            padding: 5px;
+            text-align: center;
+        }
+
+        th{
+            background-color: black;
+            color: white;
+            height: 30px;
+        }
+
+        tr :hover{
+            background-color:greenyellow ;
+        }
+
+        tr:nth-child(even){
+            background-color: gray;
+        }
+        tr:nth-child(odd){
+            background-color: gold;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Student Details</caption>
+        <tr>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>GPA</th>
+            <th>PHN</th>
+            <th>BIO</th>
+        </tr>
+
+        <tr>
+            <td>01</td>
+            <td>Kakoli</td>
+            <td>5.00</td>
+            <td>012345..</td>
+            <td>Student</td>
+        </tr>
+
+        <tr>
+            <td>03</td>
+            <td>Kak</td>
+            <td>4.00</td>
+            <td>045737345..</td>
+            <td>Unemployed</td>
+        </tr>
+
+        <tr>
+            <td>06</td>
+            <td>Kaberi</td>
+            <td>4.70</td>
+            <td>019999..</td>
+            <td>Student</td>
+        </tr>
+
+        <tr>
+            <td>10</td>
+            <td>Kallo</td>
+            <td>3.76</td>
+            <td>0100005..</td>
+            <td>Married</td>
+        </tr>
+    </table>
+</body>
+</html>
