@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation part 2 (transition and transform)</title>
+
+    <style>
+        .main{
+            background-color: tomato;
+            width: 300px;
+            height: 400px;
+            margin: 0 auto;
+            transition-property: width;
+            transition-duration: 5s;
+            transition-delay: 1s;
+            transition-timing-function: ease-in-out;
+        }
+
+        .main:hover{
+            width: 400px;
+            transform: rotate(360deg);
+        }
+
+        h1{
+            font-size: 1.5rem;
+            color: black;
+            transition: font-size 4s;
+        }
+
+        h1:hover{
+            font-size: 3.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>sfgtg</h1>
+    </div>
+</body>
+</html>
