@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RWD example 4</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        .header{
+            background-color: coral;
+            color: white;
+            padding: 1% 5%;
+            text-align: center;
+        }
+
+        .nav_menu {
+            padding: 1% 5%;
+            background-color: antiquewhite;
+        }
+
+        .nav_menu a{
+            color: black;
+            text-decoration: none;
+            font-size: 1,2rem;
+            padding: 10px;
+            display: block;
+            
+        }
+
+        .main{
+            padding: 1% 5%;
+            background-color: turquoise;
+        }
+
+        .aside{
+            padding: 1% 5%;
+            background-color: chartreuse;
+            text-align: center;
+        }
+
+        .footer{
+            background-color: black;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 0.8rem;
+        }
+
+
+        /*Desktop er jonno*/
+        .col-1{width:8.33%;}
+        .col-2{width:16.66%;}
+        .col-3{width:25%;}
+        .col-4{width:33.33%;}
+        .col-5{width:41.66%;}
+        .col-6{width:50%;}
+        .col-7{width:58.33%;}
+        .col-8{width:66.66%;}
+        .col-9{width:75%;}
+        .col-10{width:83.33%;}
+        .col-11{width:91.66%;}
+        .col-12{width:100%;}
+
+        [class *="col-"]{
+            float: left;
+            padding: 10px;
+        }
+
+        .row::after{
+            content:' ';
+            clear: both;
+            display: table;
+
+        }
+
+        /* Mobile phn er jonno*/
+
+        @media screen and (max-width:768px) {
+            [class *="col-"]{
+                width: 100%;
+            }
+
+            .nav_menu a{
+                text-align: center;
+                background-color: aqua;
+                margin: 10px;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Reshma kakoli</h1>
+    </div>
+
+    <div class="row">
+        <div class="nav_menu col-2">
+          <a href="#">Home</a>
+          <a href="#">Tutorial</a>
+          <a href="#">Contect</a>
+        </div>
+
+        <div class="main col-7">
+            <h1>I am a Web Designer</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab dolores doloribus fugit sapiente ex voluptatem quasi totam iure aperiam quo similique voluptate
+               perspiciatis perferendis aliquid quae quis esse molestias incidunt, laborum eius. Eaque hic unde quas recusandae explicabo maxime dignissimos, praesentium
+               debitis in consectetur delectus cupiditate quia saepe repellat possimus!</p>
+
+        </div>
+
+        <div class="aside col-3">
+            <h2>What i love?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, sapiente.</p>
+
+            <h2>What i do?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, sapiente.</p>
+
+            <h2>What i dont love?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, sapiente.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; Study with reshma kakoli 2024
+    </div>
+</body>
+</html>
